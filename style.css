@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.support {
+    display: inline-block;
+    width: 100%;
+}
+
+.sec1 {
+    background: #0e1b29;
+    height: 100vhgit;
+}
+
+.title h1 {
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 40px;
+}
+
+.click {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    display: none;
+}
+
+.icons-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 700px;
+    margin: 50px auto;
+}
+
+.icons-box svg {
+    height: 80px;
+}
+
+
+/* ----------------------- */
+.icons-box__moon path {
+    fill: transparent;
+    stroke: turquoise;
+    stroke-width: 0.5;
+    stroke-dasharray: 101;
+    stroke-dashoffset: 0;
+}
+
+.icons-box__heart path {
+    fill: transparent;
+    stroke: turquoise;
+    stroke-width: 1;
+    stroke-dasharray: 170;
+    stroke-dashoffset: 0;
+}
+
+.icons-box__star path {
+    fill: transparent;
+    stroke: turquoise;
+    stroke-width: 6;
+    stroke-dasharray: 1150;
+    stroke-dashoffset: 0;
+}
+
+/* ---------------- */
+
+.icons-box__moon path:hover {
+    animation: animate_moon 4s linear forwards;
+}
+
+@keyframes animate_moon {
+    0% {
+        stroke-dashoffset: 0;
+    }
+
+    40% {
+        stroke-dashoffset: 101;
+    }
+
+    80% {
+        stroke-dashoffset: 202;
+    }
+
+    100% {
+        stroke-dashoffset: 202;
+        fill: white;
+    }
+}
+
+/* --------------- */
+.icons-box__heart path:hover {
+    animation: animate_heart 4s linear forwards;
+}
+
+@keyframes animate_heart {
+    0% {
+        stroke-dashoffset: 0;
+    }
+
+    40% {
+        stroke-dashoffset: 170;
+    }
+
+    80% {
+        stroke-dashoffset: 340;
+    }
+
+    100% {
+        stroke-dashoffset: 340;
+        fill: white;
+    }
+}
+
+/* --------------------- */
+.icons-box__star path:hover {
+    animation: animate_star 4s linear forwards;
+}
+
+@keyframes animate_star {
+    0% {
+        stroke-dashoffset: 0;
+    }
+
+    40% {
+        stroke-dashoffset: 1150;
+    }
+
+    80% {
+        stroke-dashoffset: 2300;
+    }
+
+    100% {
+        stroke-dashoffset: 2300;
+        fill: white;
+    }
+}
+
+
+@media screen and (max-width:767.9px){
+    .click{
+        display: block;
+    }
+}
